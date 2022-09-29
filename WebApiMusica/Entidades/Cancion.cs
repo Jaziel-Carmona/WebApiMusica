@@ -1,10 +1,18 @@
-﻿namespace WebApiMusica.Entidades
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace WebApiMusica.Entidades
 {
     public class Cancion
     {
         public int Id { get; set; }
-
+        [Required(ErrorMessage = "El campo {0} es requerido")] 
+        [StringLength(maximumLength: 10, ErrorMessage = "El campo {0} solo puede tener hasta 15 caracteres")]
         public string Nombre { get; set; }
+
+        [Range(1, 9, ErrorMessage = "El campo no se encuentra dentro del rango")]
+        [NotMapped]
+        public int numero_album { get; set; }
 
         public string Genero { get; set; }
 

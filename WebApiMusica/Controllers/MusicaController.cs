@@ -6,7 +6,7 @@ namespace WebApiMusica.Controllers
 {
     [ApiController]
     [Route("api/musica")]
-    public class MusicaController: ControllerBase
+    public class MusicaController : ControllerBase
     {
         private readonly ApplicationDbContext dbContext;
 
@@ -15,14 +15,55 @@ namespace WebApiMusica.Controllers
             this.dbContext = dbContext;
         }
 
-        [HttpGet]
+        // [HttpGet("/Listado")] /Listado
+        // [HttpGet("Listado")] api/musica/Listado
+        [HttpGet] // api/musica
         public async Task<ActionResult<List<Artista>>> Get()
         {
             return await dbContext.Artistas.Include(x => x.canciones).ToListAsync();
         }
 
+        [HttpGet("primero")] //api/alumnos/primero
+        public async Task<ActionResult<Artista>> PrimerArtista([FromHeader] int valor, [FromQuery] string artista, [FromQuery] int artistaId)
+        {
+            return await dbContext.Artistas.FirstOrDefaultAsync();
+        }
+
+        [HttpGet("primero2")]
+        public ActionResult<Artista> PrimerArtistaD()
+        {
+            return new Artista() { Nombre = "DOS" };
+        }
+
+        [HttpGet("{id:int}/{param=Dan Reynolds}")] 
+        public async Task<ActionResult<Artista>> Get(int id, string param)
+        {
+            var artista = await dbContext.Artistas.FirstOrDefaultAsync(x => x.Id == id);
+
+            if (artista == null)
+            {
+                return NotFound();
+            }
+
+            return artista;
+        }
+
+        [HttpGet("{nombre}")]
+        public async Task<ActionResult<Artista>> Get([FromRoute] string nombre)
+        {
+            var artista = await dbContext.Artistas.FirstOrDefaultAsync(x => x.Nombre.Contains(nombre));
+
+            if (artista == null)
+            {
+                return NotFound();
+            }
+
+            return artista;
+        }
+
+
         [HttpPost]
-        public async Task<ActionResult> Post(Artista artista)
+        public async Task<ActionResult> Post([FromBody] Artista artista)
         {
             dbContext.Add(artista);
             await dbContext.SaveChangesAsync();
