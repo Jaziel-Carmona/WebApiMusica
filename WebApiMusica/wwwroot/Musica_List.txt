@@ -1,0 +1,24 @@
+Inicializando el proceso........
+Ejecutando Spotify_List: 31/10/2022 12:01:04
+Ejecutando Spotify_List: 31/10/2022 12:01:14
+Ejecutando Spotify_List: 31/10/2022 12:01:24
+Ejecutando Spotify_List: 31/10/2022 12:01:34
+Inicializando el proceso........
+Ejecutando Spotify_List: 31/10/2022 12:02:00
+Ejecutando Spotify_List: 31/10/2022 12:02:10
+Ejecutando Spotify_List: 31/10/2022 12:02:20
+Ejecutando Spotify_List: 31/10/2022 12:02:30
+Ejecutando Spotify_List: 31/10/2022 12:02:40
+Ejecutando Spotify_List: 31/10/2022 12:02:50
+Ejecutando Spotify_List: 31/10/2022 12:03:00
+Inicializando el proceso........
+Ejecutando Spotify_List: 31/10/2022 12:03:14
+Ejecutando Spotify_List: 31/10/2022 12:03:24
+Ejecutando Spotify_List: 31/10/2022 12:03:34
+Ejecutando Spotify_List: 31/10/2022 12:03:44
+Ejecutando Spotify_List: 31/10/2022 12:03:54
+Ejecutando Spotify_List: 31/10/2022 12:04:04
+Ejecutando Spotify_List: 31/10/2022 12:04:14
+Ejecutando Spotify_List: 31/10/2022 12:04:24
+Ejecutando Spotify_List: 31/10/2022 12:04:34
+Ejecutando Spotify_List: 31/10/2022 12:04:44

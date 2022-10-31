@@ -1,11 +1,54 @@
 {
   "Version": 1,
-  "Hash": "XhDR2Jxs67kcGF3aVCHDcJc2OU+Ttbt+bhwjxHjCqOY=",
+  "Hash": "faaZXQApxrLA/ilq9f7yjQfUbA/0C9UKaBtJ+61pSxA=",
   "Source": "WebApiMusica",
   "BasePath": "_content/WebApiMusica",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "WebApiMusica\\wwwroot",
+      "Source": "WebApiMusica",
+      "ContentRoot": "C:\\Users\\Alejandro\\source\\repos\\WebApiMusica\\WebApiMusica\\wwwroot\\",
+      "BasePath": "_content/WebApiMusica",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Alejandro\\source\\repos\\WebApiMusica\\WebApiMusica\\wwwroot\\Musica_List.txt",
+      "SourceId": "WebApiMusica",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Alejandro\\source\\repos\\WebApiMusica\\WebApiMusica\\wwwroot\\",
+      "BasePath": "_content/WebApiMusica",
+      "RelativePath": "Musica_List.txt",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Musica_List.txt"
+    },
+    {
+      "Identity": "C:\\Users\\Alejandro\\source\\repos\\WebApiMusica\\WebApiMusica\\wwwroot\\Primer Archivo.txt",
+      "SourceId": "WebApiMusica",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Alejandro\\source\\repos\\WebApiMusica\\WebApiMusica\\wwwroot\\",
+      "BasePath": "_content/WebApiMusica",
+      "RelativePath": "Primer Archivo.txt",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Primer Archivo.txt"
+    }
+  ]
 }
